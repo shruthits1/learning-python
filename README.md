@@ -15,6 +15,10 @@ https://exercism.org/
 https://adventofcode.com/ 
 https://www.codewars.com/ 
 
+Other resources:
+3blue1brown : for algebra
+for more ask :) 
+
 ## pythontutor.com 
 to visualize intermediate working
 https://pythontutor.com/visualize.html#mode=edit
