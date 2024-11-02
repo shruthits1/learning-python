@@ -46,4 +46,81 @@ other dunder methods
 
 **Install PengWin which works with wsl on windows**
 
+# The visual representation of quantitative data book by Edward Tufte
+
+# Seaborn - built on matplotlib - focussed on statistical visualizations
+
+# bokeh if you are working on web for interactive charts
+
+# Altair - declarative way of generating charts
+
+# GIT
+ git commit -m "comment" <optional: filename> 
+so you can stage multiple files but only commit specific ones
+
+ git config --global init.defaultBranch Main 
+ To change the defaultBranch name
+
+git commit --amend --reset-author
+to change the author for that commit
+
+git restore <filename>
+to undo changes that are saved but not staged.
+
+git log 
+to view the trail of changes
+
+if we omit -m in git commit it'llopen an editor to add longer commit messages
+we can set the default editor to vs code using "code --wait" in command
+git config --global core.editor "code --wait"
+
+
+esc -wq
+- to exit from vi editor from git bash
+
+man git
+- helpful commands
+
+git help commit
+shows options for commit command 
+
+git diff <first 6 chars of commit ID of orig file> <first 6 chars of commit of updated file>
+shows difference. you can give first 4 chars or 5 chars as well.. prefer 6 chars
+
+git commit --amend
+opens the last commit and allows you to make changes
+
+
+# UV
+![alt text](image-1.png)
+https://docs.astral.sh/uv/getting-started/installation/
+
+it installs dependencies in UV's cache folder and doesn't change the underlying system's software.
+
+https://peps.python.org/pep-0621/
+
+uv init
+ - creates project 
+if it is not within another git repo, uv init also initialises the folder with git 
+
+uv sync
+- if the underlying system's python is of an older version and we wnt our program to run on a new one.
+.python-version created by uv init command and change the version we need here, and also give this new version even in the python.toml file. Then running the sync command will install the latest version in UV'scache
+
+uv run python --version
+shows version of python in UV's environment
+
+
+** on gitbash type: fg  if you have accidentally done cntrl+z from edit file mode on gitbash which sends the current file to background and you maynot be able to edit that file until you type fg
+
+- so for any command of any library, 
+   if it is to execute, append uv run before the command
+   if it is to install, use uv add <whatever the installable>
+   e.g. uv add flask 
+   this will install the dependency and update pyproject.toml with the dependency
+   
+   uv run flask --app hello run
+   flask quickstart page has the command flask --app hello run, instead we append uv run so trigger it via uv which manages dependencies. 
+
+   https://flask.palletsprojects.com/en/stable/quickstart/
 
