@@ -37,3 +37,13 @@ other dunder methods
  - Generators reduce the memory footprint without impacting the performance
 
  Create search space of data (like permutations output) as generators and create function to validate this against the constraints / validator(like checking agaisnt keylog in euler79) until you get values that match.
+
+ # PANDAS 
+ -you can access columns by column name using :
+    - dictionary notation data['Height'] : suited for badly named columns
+    - object notation data.Height : not suited when column names have spaces
+ -it can generally handle data size of 40% of RAM size
+
+**Install PengWin which works with wsl on windows**
+
+
