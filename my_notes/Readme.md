@@ -124,3 +124,6 @@ shows version of python in UV's environment
 
    https://flask.palletsprojects.com/en/stable/quickstart/
 
+# numpy - matplotlib
+df.columns
+df.<columnanme>.nunique
